@@ -1,48 +1,95 @@
-<div class="container">
 
-<h1> Bootstrap demo </h1>
 
-<div class="jumbotron">
-<h1> Neki aman </h1>
-</div> 
+<br/><br/>
+<div class="w3-content w3-display-container">
+<img class="mySlides" src="/slika11.jpg" style="width:1000px; height:600px;">
+<img class="mySlides" src="/slika12.jpg" style="width:1000px; height:600px;">
+<img class="mySlides" src="/slika13.jpg" style="width:1000px; height:600px;">
+<img class="mySlides" src="/slika14.jpg" style="width:1000px; height:600px;">
+
+<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+var i;
+var x = document.getElementsByClassName("mySlides");
+if (n > x.length) {slideIndex = 1}    
+if (n < 1) {slideIndex = x.length}
+for (i = 0; i < x.length; i++) {
+   x[i].style.display = "none";  
+}
+x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+
+
+<br/>
+<br/>
 
 <div class="row">
-    <div class="col-md-12">
-<p> pvdje je 12 i sve zauzima </p>
+    <div class="col-md-12"> 
+
     </div> 
 </div> 
 
+<div class="jumbotron">
+
+
 
 <div class="row">
 
-<div class="col-md-6">
-<p> ovdje jedno 6 </p>
+<div class="col-md-4">
+<h3> Naslov </h3>
+<p> Rasprava o otvaranju finansijske škole višeg stupnja vodila se nekoliko godina. Tako već 1910. godine Trgovačka škola i obrtnička komora za BiH u Sarajevu u svom dopisu od 19.11.1910. godine upućenom Zemaljskoj vladi za BiH traži otvaranje jednogodišnjeg merkatilnog tečaja za apsolvente srednjih škola i ujedno predlaže da se u Sarajevu osnuje Trgovačka akademija ''sa sličnim uređenjem i nastavnom osnovom kao akademije u Monarhiji.</p>
+
 </div>
 
-<div class="col-md-6">
-<p> ovdje drugo 6 </p>
+<div class="col-md-4">
+<h3> Naslov </h3>
+
+<p> Iste godine otvorene su nove trgovačke stručne škole u Sarajevu, Mostaru i Tuzli i trajale su pet godina. </p>
+
+</div>
+
+<div class="col-md-4">
+<h3> Naslov </h3>
+
+<p> U početku rada Državna trgovačka akademija u Sarajevu je nekoliko puta mijenjala radne prostore. Školsku 1912/13. godinu Akademija je započela u tri prostorije velike realke u Sarajevu. Još u toku iste školske godine Akademija je morala preći u prostorije bivše Jevrejske osnovne škole u Ćemaluši ulici. Ni tu se nije dugo zadržala i ponovo se vraća u veliku realku. Školske godine 1913/14. je smještena u dvije adaptirane zgrade u Miss Ibrinoj ulici.</p>.
 </div>
 
 </div>
 
 <div class="row">
     <div class="col-md-3">
-        <p> 1 </p>
+        
     </div>
 
     <div class="col-md-3">
-        <p> 2 </p>
+        
     </div>
 
     <div class="col-md-3">
-        <p> 3 </p>
-        <img src="/LogoSample_ByTailorBrands.jpg">
+        
+        
     </div>
 
     <div class="col-md-3">
-        <p> 4 </p>
+        
     </div>
 </div>
 
 
-</div> 
+
+
